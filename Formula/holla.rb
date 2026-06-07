@@ -1,6 +1,6 @@
 class Holla < Formula
   desc "Adaptive dev environment CLI — adapts to what you have installed"
-  homepage "https://github.com/donbeave/holla"
+  homepage "https://github.com/tailrocks/holla"
   version "0.1.0"
   license "MIT"
 

@@ -2,7 +2,7 @@ class Holla < Formula
   desc "Adaptive dev environment CLI — adapts to what you have installed"
   homepage "https://github.com/tailrocks/holla"
   version "0.2.0"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     on_arm do

@@ -1,28 +1,28 @@
 class Holla < Formula
   desc "Adaptive dev environment CLI — adapts to what you have installed"
   homepage "https://github.com/tailrocks/holla"
-  version "0.4.1"
+  version "0.4.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/tailrocks/holla/releases/download/v0.4.1/holla-0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "1b6de7f8a6212a93b733b0c01023d7fd16face3dab35698924d97ba7ba8b0191"
+      url "https://github.com/tailrocks/holla/releases/download/v0.4.2/holla-0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "cf8310b4b698f7c7d4848d67e4a448e8755b6647e6b02d7d4117cc99e2376f99"
     end
     on_intel do
-      url "https://github.com/tailrocks/holla/releases/download/v0.4.1/holla-0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "6b46bc8fde0fafcc305a79005f8f6da166c7e5c268da720c7ab7c2e0a46cf70b"
+      url "https://github.com/tailrocks/holla/releases/download/v0.4.2/holla-0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "cc3ae45e4d333b2e3a5a39db8b3e52fb65fee43fe0221ca18cdace3f26ed318d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tailrocks/holla/releases/download/v0.4.1/holla-0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8796ce083bd33cc713687a36aa3ef4324a390689a746c61e4e9addde1f7dc53d"
+      url "https://github.com/tailrocks/holla/releases/download/v0.4.2/holla-0.4.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5a6f87f2bd4afd8ee053a00a76b95faa926262346e91e2e10b74cded11531cd5"
     end
     on_intel do
-      url "https://github.com/tailrocks/holla/releases/download/v0.4.1/holla-0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0863b66eaa901cdfd02dfa9c01c5b441ee69865506651700274a50374575d4bd"
+      url "https://github.com/tailrocks/holla/releases/download/v0.4.2/holla-0.4.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "93cf96fd96ce4a5048d4b3545a896e2b70f98f3a09fa31a0adbd663c4c874b4e"
     end
   end
 

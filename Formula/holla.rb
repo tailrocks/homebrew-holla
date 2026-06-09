@@ -6,8 +6,8 @@ class Holla < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/tailrocks/holla/releases/download/v0.2.0/holla-0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b556007573688c76e95dbf6cb25a0744a86742911fbea9a9ff5a3abdd2b933bd"
+      url "https://github.com/tailrocks/holla/archive/refs/tags/v0.4.0.tar.gz"
+      sha256 "2b7d1bb21cd5a4d676e4c61d0235dcf27d76f4648d1466eacbbc563ade2113ab"
     end
     on_intel do
       url "https://github.com/tailrocks/holla/releases/download/v0.2.0/holla-0.2.0-x86_64-apple-darwin.tar.gz"

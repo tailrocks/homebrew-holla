@@ -6,8 +6,12 @@ Homebrew tap for [holla](https://github.com/tailrocks/holla) — adaptive dev en
 
 ```bash
 brew tap tailrocks/holla
+brew trust tailrocks/holla
 brew install holla@preview
 ```
+
+Homebrew can refuse to load formulae from taps that have not been trusted. Run
+`brew trust tailrocks/holla` once after tapping this repository.
 
 ## License
 

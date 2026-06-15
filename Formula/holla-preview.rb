@@ -8,22 +8,22 @@ class HollaPreview < Formula
   on_macos do
     on_arm do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-aarch64-apple-darwin.tar.gz"
-      sha256 "dc0f57df9aa9c42e920278afb032883c1c709a8b0fa5b65d43fab2556c92f2f4"
+      sha256 "7fd5064fcb1e54256f02a9196dcadee06763f9aeb8421a830a9102849f4a55bc"
     end
     on_intel do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-x86_64-apple-darwin.tar.gz"
-      sha256 "4ed2130e86350fa25534bc9bca032c42c76dadfee7786b2012faae899567947c"
+      sha256 "3337f4fc6971bf4a094150b10865f238bda122ac39f097274ef5e763f077aac6"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f8aeadc11eb2ca8d90909114033837bf5929e15053a85511df40597a4c4f3c1f"
+      sha256 "a5dd7aa72767c5675bb2349e08057a99542e786d394ca06b8ee25939e6058904"
     end
     on_intel do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "22099920c1f5314d648af188c859976195d60589164e02a74febe0bc7938c2a0"
+      sha256 "295947988c7ef16116303674f66e093873c425499115f724b4a8eab194e0dfec"
     end
   end
 

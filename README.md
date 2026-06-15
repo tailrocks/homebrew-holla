@@ -6,7 +6,7 @@ Homebrew tap for [holla](https://github.com/tailrocks/holla) — adaptive dev en
 
 ```bash
 brew tap tailrocks/holla
-brew install holla
+brew install holla@preview
 ```
 
 ## License

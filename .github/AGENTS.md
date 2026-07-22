@@ -6,3 +6,4 @@
 - Keep permissions least-privilege, concurrency bounded, and every job timed out.
 - Preserve identical non-mutating semantics across lanes.
 - Gate repository mutation with `matrix.config.writer`; `both` has one writer.
+- Never use `sudo` for cache ownership or permission repair.

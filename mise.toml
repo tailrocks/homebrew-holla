@@ -9,5 +9,17 @@ run = "scripts/package-update.sh"
 [tasks.check]
 run = "actionlint && shellcheck scripts/*.sh && scripts/test-package-update.sh"
 
+[tasks.build]
+depends = ["check"]
+
+[tasks.test]
+run = "scripts/test-package-update.sh"
+
+[tasks.lint]
+run = "actionlint && shellcheck scripts/*.sh"
+
+[tasks.fmt]
+depends = ["check"]
+
 [settings]
 lockfile = true

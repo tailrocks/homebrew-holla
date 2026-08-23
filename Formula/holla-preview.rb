@@ -1,29 +1,29 @@
-# source-sha: f28073aaddb555025ad3e20b403e3ac405fa5e77
+# source-sha: 73d5bbbf6e2b68622ae732d14a4cc6b8cc74707e
 class HollaPreview < Formula
   desc "Adaptive dev environment CLI — preview build from latest main"
   homepage "https://github.com/tailrocks/holla"
-  version "1.0.3-preview.239+f28073a"
+  version "1.0.3-preview.246+73d5bbb"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-aarch64-apple-darwin.tar.gz"
-      sha256 "3aba124211a433036b5775e3cb464827c358ce341af63094721af2904e1aba0e"
+      sha256 "74f60a4d67095bedd8f5e22021d8c5a0a03c4b84b5c4087f38e5d3c10df5f64b"
     end
     on_intel do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-x86_64-apple-darwin.tar.gz"
-      sha256 "fc0d28625af96eb2744fa3b9e800c90230b52e58e76104d92a5ba8647f8b7196"
+      sha256 "8ecb5124e94ff6fb81d74ea926244d4fb4b01ee9a40c70c73e2f794513207600"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "67b2d18149165f576d3eb55d9fe22876269b22aed6c10832a39ff71b6988547b"
+      sha256 "52746bf08251b7caacc16089375a1e76ccf97f02d9f35cd298c9ddc3c26c875d"
     end
     on_intel do
       url "https://github.com/tailrocks/holla/releases/download/preview/holla-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b76344db207c44d83d1f891f362a8140a50a796af2bb0e02b30d747d34d7a39f"
+      sha256 "01b79dd83254f907d0e28dffba28de4f67a2a613267a932b9e1f033e48a99741"
     end
   end
 

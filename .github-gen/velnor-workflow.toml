@@ -2,48 +2,12 @@ schema = 1
 
 [generator]
 repository = "tailrocks/homebrew-holla"
-
-# The scan's default `brew audit --strict --online` has no tap context on
-# GitHub-hosted Linuxbrew; run the repository's mise `check` task instead.
-[scan]
-exclude = ["Formula/**", "Casks/**"]
+revision = "e05aee6de1d1614d752b4d1b1d26a49ac2c5ef91"
 
 [workflow]
-runners = "github"
-automatic = "github"
-default_dispatch_runner = "github"
+runners = "both"
 automatic_lanes = "github"
+default_dispatch_runner = "github"
 github_runner = "ubuntu-24.04"
 velnor_labels = ["self-hosted", "velnor-target-mvp"]
 default_branch = "main"
-
-[policy]
-ruleset_external_status_checks = ["DCO"]
-
-[[units]]
-id = "homebrew"
-kind = "homebrew"
-root = "."
-watch = ["Formula/**", "Casks/**", "Brewfile", "mise.toml", "mise.lock", "scripts/**"]
-ci_tasks = ["check"]
-mise_tools = ["actionlint", "jq", "shellcheck"]
-
-[[static_files]]
-file = ".github/workflows/ci-unit-homebrew.yml"
-source = ".github-gen/sources/workflows/ci-unit-homebrew.yml"
-
-[[static_files]]
-file = ".github/actions/report-velnor-ci-outcomes/action.yml"
-source = ".github-gen/sources/actions/report-velnor-ci-outcomes/action.yml"
-
-[[static_files]]
-file = ".github/workflows/package-update.yml"
-source = ".github-gen/sources/workflows/package-update.yml"
-
-[[static_files]]
-file = ".github/workflows/update-preview.yml"
-source = ".github-gen/sources/workflows/update-preview.yml"
-
-[[static_files]]
-file = ".github/workflows/renovate.yml"
-source = ".github-gen/sources/workflows/renovate.yml"

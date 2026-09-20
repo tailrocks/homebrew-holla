@@ -1,8 +1,9 @@
 class Holla < Formula
   desc "Adaptive dev environment CLI — adapts to what you have installed"
   homepage "https://github.com/tailrocks/holla"
-  version "1.0.3"
   license "Apache-2.0"
+
+  conflicts_with "holla-preview", because: "preview and stable install the same binary"
 
   on_macos do
     on_arm do

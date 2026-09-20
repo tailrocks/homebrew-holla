@@ -22,7 +22,10 @@ jq -n '{source_repository:"tailrocks/holla",source_ref:"refs/tags/v9.8.7"}' > "$
   cd "$tmp"
   VELNOR_VERIFIED_PACKAGE_DIR="$tmp/verified" scripts/package-update.sh
 )
-grep -q 'version "9.8.7"' "$tmp/Formula/holla.rb"
+if grep -q '^  version ' "$tmp/Formula/holla.rb"; then
+  echo "redundant version stanza present in Formula/holla.rb" >&2
+  exit 1
+fi
 test "$(grep -c 'releases/download/v9.8.7/holla-9.8.7-' "$tmp/Formula/holla.rb")" -eq 4
 for item in "${assets[@]}"; do
   grep -q "$(jq -r .sha256 <<<"$item")" "$tmp/Formula/holla.rb"

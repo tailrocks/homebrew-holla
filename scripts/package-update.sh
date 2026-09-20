@@ -22,7 +22,6 @@ linux_intel=$(asset x86_64-unknown-linux-gnu)
 test "$(jq '[.assets[]|select(.name|endswith(".tar.gz"))]|length' "$manifest")" -eq 4
 
 sed \
-  -e "s/^  version \"[^\"]*\"/  version \"$version\"/" \
   -e "s#releases/download/v[^/]*/holla-[^-]*-aarch64-apple-darwin#releases/download/$tag/holla-$version-aarch64-apple-darwin#" \
   -e "s#releases/download/v[^/]*/holla-[^-]*-x86_64-apple-darwin#releases/download/$tag/holla-$version-x86_64-apple-darwin#" \
   -e "s#releases/download/v[^/]*/holla-[^-]*-aarch64-unknown-linux-gnu#releases/download/$tag/holla-$version-aarch64-unknown-linux-gnu#" \

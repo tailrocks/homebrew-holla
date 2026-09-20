@@ -3,6 +3,8 @@ class Holla < Formula
   homepage "https://github.com/tailrocks/holla"
   license "Apache-2.0"
 
+  conflicts_with "holla-preview", because: "preview and stable install the same binary"
+
   on_macos do
     on_arm do
       url "https://github.com/tailrocks/holla/releases/download/v1.0.3/holla-1.0.3-aarch64-apple-darwin.tar.gz"
